@@ -1,5 +1,5 @@
 
-<style>
+
     html,
     body {
 
@@ -47,7 +47,7 @@
 
     .nav_header {
 
-
+        font-family: 'Gilroy-Bold';
         display: flex;
         justify-content: space-evenly;
         padding: 31px;
@@ -447,4 +447,3 @@
     .mobile_menu_visible {
         display: block;
     }
-</style>
