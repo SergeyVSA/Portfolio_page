@@ -1,12 +1,10 @@
-
-    window.addEventListener("DOMContentLoaded", function () {
-        document.querySelector("#open-menu-btn").addEventListener("click", function () {
-            document.querySelector(".mobile-menu").classList.add("visible");
-        });
-        document.body.addEventListener("click", function (e) {
-            if (!e.target.closest("#open-menu-btn")) {
-                document.querySelector(".mobile-menu").classList.remove("visible");
-            }
-        });
+window.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".btn_mobile_menu").addEventListener("click", function () {
+        document.querySelector(".mobile-menu").classList.toggle("hidden");
     });
-
+    document.body.addEventListener("click", function (e) {
+        if (!e.target.closest(".btn_mobile_menu")) {
+            document.querySelector(".mobile-menu").classList.add("hidden");
+        }
+    });
+});
